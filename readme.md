@@ -132,6 +132,8 @@ B.extends(A);
 //B.staticFunction = function () {
 //    // call parent static function
 //    A.staticFunction();
+//    this.parentClass.staticFunction();
+//
 //    console.log('B static function');
 //}
 B.staticFunction();

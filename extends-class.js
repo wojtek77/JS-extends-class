@@ -22,6 +22,7 @@ if (typeof Object.prototype.extends !== 'function') {
                     this[st] = parentClass[st];
                 }
             }
+            this.parentClass = parentClass;
         } else if (typeof this === 'object') {
             Object.setPrototypeOf(this.constructor.prototype, Object.create(parentClass.prototype));
 
@@ -44,6 +45,7 @@ if (typeof Object.prototype.extends !== 'function') {
             }
 
             this.parent = parentObj;
+            this.constructor.parentClass = parentClass;
         }
     };
 }
